@@ -11,7 +11,6 @@ export default function DashboardHeader() {
           height={50}
           priority
         />
-        <span>text</span>
       </div>
       <div>
         <Image

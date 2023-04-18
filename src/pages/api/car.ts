@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-type Data = {
+export type carsData = {
   id: number;
   name: string;
   color: string;
@@ -10,7 +10,7 @@ type Data = {
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data[]>,
+  res: NextApiResponse<carsData[]>,
 ) {
   const carsMock = [
     {

@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-type Data = {
+export type customerData = {
   name: string;
   id: string;
   carId: number[];
@@ -8,7 +8,7 @@ type Data = {
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>,
+  res: NextApiResponse<customerData>,
 ) {
   const customerMock = {
     id: '123',
