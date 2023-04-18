@@ -1,4 +1,5 @@
 import { serviceData } from '@/pages/api/services';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 type PageProps = {
@@ -86,6 +87,11 @@ export default function Services({ data }: PageProps) {
         <p className='my-2 p-5 w-full text-center font-bold text-xl bg-blue-300 text-slate-500 shadow'>
           {`VALOR R$ ${totalServicePrice > 0 ? totalServicePrice : '--'}`}
         </p>
+      </div>
+      <div className='animate qrcode-screen right-0'>
+        <Link className='text-blue-800 button-close-qrcode-screen' href='/'>
+          X
+        </Link>
       </div>
     </main>
   );

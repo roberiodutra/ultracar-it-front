@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function TechSelect() {
   return (
     <main>
-      <div className='qrcode-screen-full'></div>
+      <div className='screen-full'></div>
       <div className='drop-shadow-xl'>
         <Image
           src='/big-logo.png'

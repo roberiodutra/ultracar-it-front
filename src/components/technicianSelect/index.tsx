@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function TechnicianSelect() {
   return (
     <div className='bg-slate-200 flex flex-col items-center p-2 rounded-xl'>
@@ -9,9 +11,12 @@ export default function TechnicianSelect() {
           <option>John Doe</option>
         </select>
       </div>
-      <button className='opacity-75 m-4 w-80 bg-blue-400 hover:bg-indigo-400 text-slate-900 font-bold py-2 px-20 border-b-4 border-slate-600 hover:border-blue-500 rounded'>
+      <Link
+        href={'/services/3'}
+        className='opacity-75 m-4 w-80 text-center bg-blue-400 hover:bg-indigo-400 text-slate-900 font-bold py-2 px-20 border-b-4 border-slate-600 hover:border-blue-500 rounded'
+      >
         CONFIRMAR
-      </button>
+      </Link>
     </div>
   );
 }

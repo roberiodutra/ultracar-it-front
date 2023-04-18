@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function DashboardHeader() {
   return (
@@ -13,13 +14,15 @@ export default function DashboardHeader() {
         />
       </div>
       <div>
-        <Image
-          src='/small-logo.png'
-          alt='Ultracar Small Logo'
-          width={50}
-          height={50}
-          priority
-        />
+        <Link href={'/'}>
+          <Image
+            src='/small-logo.png'
+            alt='Ultracar Small Logo'
+            width={50}
+            height={50}
+            priority
+          />
+        </Link>
       </div>
       <div className='h-5'>
         <Image
