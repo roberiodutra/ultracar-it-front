@@ -6,12 +6,12 @@ type PageProps = {
   data: serviceData[];
 };
 
-export default function DashboardPage({ data }: PageProps) {
+export default function CustomerPage({ data }: PageProps) {
   return <Dashboard />;
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const res = await fetch('http://localhost:3000/api/services');
+  const res = await fetch('http://localhost:3000/api/customer');
   const data = await res.json();
   return {
     props: {
