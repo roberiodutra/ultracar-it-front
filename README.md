@@ -1,6 +1,8 @@
-<img align="center" alt="ultracar it front" title="#Ultracar-It-Front" src="ultracar-it-front-desktop-home.jpg" />
-
 <h1 align="center">Ultracar It Front</h1>
+
+<br>
+
+<img align="center" alt="ultracar it front" title="#Ultracar-It-Front" src="public/ultracar-it-front-desktop-home.jpg" />
 
 <br>
 
@@ -30,7 +32,7 @@
 
 <br>
 
-<img align="center" alt="ultracar it front figma" title="#Ultracar-It-Front-Figma" src="ultracar-it-front-figma.jpg" />
+<img align="center" alt="ultracar it front figma" title="#Ultracar-It-Front-Figma" src="public/ultracar-it-front-figma.jpg" />
 
 <br>
 
