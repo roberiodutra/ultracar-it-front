@@ -3,7 +3,7 @@ import { useState } from 'react';
 import ReadQrCode from '../readQrCode';
 
 export default function HomePage() {
-  const [hideQrCodeScreen, setHideQrCodeScreen] = useState(false);
+  const [hideQrCodeScreen, setHideQrCodeScreen] = useState(true);
 
   return (
     <div className='flex min-h-screen flex-col items-center p-2'>
@@ -53,9 +53,7 @@ export default function HomePage() {
         >
           X
         </button>
-        <div>
-          <ReadQrCode />
-        </div>
+        <ReadQrCode />
       </div>
     </div>
   );
