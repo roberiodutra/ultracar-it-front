@@ -1,10 +1,15 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
+type servicesData = {
+  name: string;
+  category: string;
+  price?: string;
+};
+
 type Data = {
   id: number;
-  name: string;
+  services: servicesData[];
   status: string;
-  category: string;
   start_date?: string;
   end_date?: string;
 };
@@ -16,45 +21,29 @@ export default function handler(
   const servicesMock = [
     {
       id: 1,
-      name: 'Troca de óleo',
+      services: [
+        { name: 'Troca de óleo', category: 'Mechanics', price: '' },
+        { name: 'Revisão', category: 'Eletric', price: '' },
+      ],
       status: 'Finished',
-      category: 'Mechanics',
       start_date: '2018-05-05T11:50:55',
       end_date: '2018-05-05T14:50:55',
     },
     {
       id: 2,
-      name: 'Revisão',
-      status: 'Finished',
-      category: 'Eletric',
+      services: [{ name: 'Alinhamento', category: 'Mechanics', price: '' }],
+      status: 'Canceled',
       start_date: '2018-05-05T11:50:55',
       end_date: '2018-05-05T14:50:55',
     },
     {
       id: 3,
-      name: 'Alinhamento',
-      status: 'Canceled',
-      category: 'Mechanics',
-      start_date: '2018-05-05T11:50:55',
-      end_date: '2018-05-05T14:50:55',
-    },
-    {
-      id: 4,
-      name: 'Balanceamento',
+      services: [
+        { name: 'Balanceamento', category: 'Mechanics', price: '' },
+        { name: 'Reparação', category: 'Eletric', price: '' },
+        { name: 'Troca de peça', category: 'Eletric', price: '50.00' },
+      ],
       status: 'Ongoing',
-      category: 'Mechanics',
-    },
-    {
-      id: 5,
-      name: 'Reparação',
-      status: 'Ongoing',
-      category: 'Eletric',
-    },
-    {
-      id: 6,
-      name: 'Troca de peça',
-      status: 'Ongoing',
-      category: 'Eletric',
     },
   ];
 
