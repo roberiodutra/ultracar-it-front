@@ -22,7 +22,6 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  console.log('🚀 ~ constgetStaticProps:GetStaticProps= ~ context:', context);
   const data = [
     {
       id: 1,
