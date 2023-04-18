@@ -1,8 +1,10 @@
 import Image from 'next/image';
+import ReadQrCode from '../readQrCode';
 
 export default function HomePage() {
   return (
     <div className='flex min-h-screen flex-col items-center p-2'>
+      <div className='qrcode-input-full'></div>
       <div className='drop-shadow-xl'>
         <Image
           src='/big-logo.png'
@@ -28,6 +30,9 @@ export default function HomePage() {
           height={0}
           priority
         />
+      </div>
+      <div className='qrcode-input'>
+        <ReadQrCode />
       </div>
     </div>
   );
