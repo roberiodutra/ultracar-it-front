@@ -1,38 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img align="center" alt="ultracar it front" title="#Ultracar-It-Front" src="ultracar-it-front-desktop-home.jpg" />
 
-## Getting Started
+<h1 align="center">Ultracar It Front</h1>
 
-First, run the development server:
+<br>
+
+<p align="center">Aplicação feita em Nextjs para desafio técnico</p>
+
+<br>
+
+<p align="center">
+  <img src="https://img.shields.io/conda/l/conda-forge/setuptools?color=036b52&logo=ghost&logoColor=036b52">
+</p>
+
+<br>
+
+<h2 align="center">
+
+[![My Skills](https://skills.thijs.gg/icons?i=js,ts,nodejs,nextjs)](https://skills.thijs.gg)
+
+</h2>
+
+<br>
+
+### 🎲Objetivo: desenvolver uma aplicação para oficinas mecânicas para que os técnicos possam visualizar os dados dos clientes e detalhamento dos pedidos, além de aceitar o serviço e iniciar o atendimento.</p>
+
+<br>
+
+### Telas no figma, inicio da aplicação:
+
+<br>
+
+<img align="center" alt="ultracar it front figma" title="#Ultracar-It-Front-Figma" src="ultracar-it-front-figma.jpg" />
+
+<br>
+
+### Technologies
+
+The following tools were used in building this API:
+
+- [Node.js](https://nodejs.org/en/)
+- [Javascript]()
+- [TypeScript]()
+- [Nextjs]()
+- [Tailwind.css]()
+
+<br>
+<p>
+Metodos utilizado:
+OOP (Object-Oriented Programming),
+Test Driven Development (TDD),
+Programação funcional
+</p>
+<br>
+
+### 🎲 Running the App
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+# Install all dependencies
+$ npm install
+
+# Build the app and run
+$ npm run build
+$ npm start
+
+# The server will start on port:3000 - access <http://localhost:3000>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<br>
