@@ -12,7 +12,7 @@ body {
   @apply text-slate-900;
 }
 
-.qrcode-input-full {
+.qrcode-screen-full {
   position: fixed;
   top: 0;
   left: 0;
@@ -25,7 +25,7 @@ body {
   z-index: 5;
 }
 
-.qrcode-input {
+.qrcode-screen {
   position: fixed;
   left: 50%;
   top: 20%;
@@ -33,15 +33,36 @@ body {
   z-index: 10;
 }
 
-.button-close-qrcode-input {
+.button-close-qrcode-screen {
   position: absolute;
-  right: 1rem;
+  top: -35px;
+  right: -35px;
+  border: 1px solid grey;
+  background-color: #D9D9D9;
+  border-radius: 20%;
   font-size: 1rem;
-  width: 2.5rem;
-  height: 2.5rem;
+  font-weight: bold;
+  width: 2rem;
+  height: 2rem;
   text-align: center;
 }
 
-.hide-qrcode-input {
+.hide-qrcode-screen {
   display: none;
+}
+
+.animate {
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+  animation-name: animate-pop;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
 }
