@@ -1,5 +1,6 @@
 import DashboardCars from '@/components/dashboardCars';
 import DashboardHeader from '@/components/dashboardHeader';
+import DashboardServices from '@/components/dashboardServices';
 import { GetServerSideProps } from 'next';
 import { carsData } from '../api/car';
 import { customerData } from '../api/customer';
@@ -14,6 +15,7 @@ export default function CustomerPage({ data }: PageProps) {
     <main>
       <DashboardHeader />
       <DashboardCars data={data.cars} />
+      <DashboardServices data={data.services} />
     </main>
   );
 }
