@@ -10,12 +10,6 @@
 
 <br>
 
-<div align="center">
-<a href="">[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</a>
-</div>
-
-<br>
-
 <h2 align="center">
 
 [![My Skills](https://skills.thijs.gg/icons?i=js,ts,nodejs,nextjs)](https://skills.thijs.gg)
