@@ -1,3 +1,4 @@
+import Dashboard from '@/components/dashboard';
 import { serviceData } from '@/pages/api/services';
 import { GetServerSideProps } from 'next';
 
