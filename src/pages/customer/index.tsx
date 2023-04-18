@@ -21,14 +21,57 @@ export default function CustomerPage({ data }: PageProps) {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const customerResponse = await fetch('http://localhost:3000/api/customer');
-  const customerData = await customerResponse.json();
+  const customerData = {
+    id: '123',
+    name: 'Joana',
+    carId: [1, 2],
+  };
 
-  const carResponse = await fetch('http://localhost:3000/api/car');
-  const carsData = await carResponse.json();
+  const carsData = [
+    {
+      id: 1,
+      name: 'Gol',
+      color: 'Preto',
+      year: '2015',
+      servicesId: [1, 2, 3, 4, 5, 6],
+    },
+    {
+      id: 2,
+      name: 'Uno',
+      color: 'Azul',
+      year: '2010',
+      servicesId: [],
+    },
+  ];
 
-  const serviceResponse = await fetch('http://localhost:3000/api/services');
-  const servicesData = await serviceResponse.json();
+  const servicesData = [
+    {
+      id: 1,
+      services: [
+        { name: 'Troca de óleo', category: 'Mechanics', price: '' },
+        { name: 'Revisão', category: 'Eletric', price: '' },
+      ],
+      status: 'Finished',
+      start_date: '2018-05-05T11:50:55',
+      end_date: '2018-05-05T14:50:55',
+    },
+    {
+      id: 2,
+      services: [{ name: 'Alinhamento', category: 'Mechanics', price: '' }],
+      status: 'Canceled',
+      start_date: '2018-05-05T11:50:55',
+      end_date: '2018-05-05T14:50:55',
+    },
+    {
+      id: 3,
+      services: [
+        { name: 'Balanceamento', category: 'Mechanics', price: '' },
+        { name: 'Reparação', category: 'Eletric', price: '' },
+        { name: 'Troca de peça', category: 'Eletric', price: '50.00' },
+      ],
+      status: 'Ongoing',
+    },
+  ];
 
   const data = {
     customer: customerData,
