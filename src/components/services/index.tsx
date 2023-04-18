@@ -7,8 +7,8 @@ type PageProps = {
 };
 
 export default function Services({ data }: PageProps) {
-  const startDate = new Date(data[0].start_date ?? Date.now());
-  const endDate = new Date(data[0].end_date ?? '');
+  const startDate = new Date(data[0]?.start_date ?? Date.now());
+  const endDate = new Date(data[0]?.end_date ?? '');
   const [totalServicePrice, setTotalPrice] = useState(0);
   const [totalServiceDuration, setServiceDuration] = useState(0);
 
@@ -26,7 +26,7 @@ export default function Services({ data }: PageProps) {
     let duration = 4;
 
     if (data) {
-      data[0].services.forEach((service) => {
+      data[0]?.services.forEach((service) => {
         totalPrice += Number(service.price);
         duration += Number(servicesDuration[service.name]);
       });
@@ -78,7 +78,7 @@ export default function Services({ data }: PageProps) {
           )} ÀS ${startDate.getHours()}h`}
         </p>
         <p className='my-2 w-full text-center px-5 py-2 font-medium text-base shadow bg-slate-300 text-blue-400'>
-          {data[0].end_date
+          {data[0]?.end_date
             ? `FINALIZADO EM ${endDate.toLocaleDateString(
                 'pt-BR',
               )} ÀS ${endDate.getHours()}h`

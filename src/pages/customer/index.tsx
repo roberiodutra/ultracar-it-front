@@ -1,7 +1,7 @@
 import DashboardCars from '@/components/dashboardCars';
 import DashboardHeader from '@/components/dashboardHeader';
 import DashboardServices from '@/components/dashboardServices';
-import { GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 import { carsData } from '../api/car';
 import { customerData } from '../api/customer';
 import { serviceData } from '../api/services';
@@ -20,7 +20,7 @@ export default function CustomerPage({ data }: PageProps) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const customerData = {
     id: '123',
     name: 'Joana',

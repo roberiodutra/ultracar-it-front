@@ -1,6 +1,6 @@
 import Services from '@/components/services';
 import { serviceData } from '@/pages/api/services';
-import { GetServerSideProps } from 'next';
+import { GetStaticProps } from 'next';
 
 type PageProps = {
   data: serviceData[];
@@ -10,7 +10,19 @@ export default function ServicesId({ data }: PageProps) {
   return <Services data={data} />;
 }
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export async function getStaticPaths() {
+  return {
+    paths: [
+      { params: { id: '1' } },
+      { params: { id: '2' } },
+      { params: { id: '3' } },
+    ],
+    fallback: false,
+  };
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  console.log('🚀 ~ constgetStaticProps:GetStaticProps= ~ context:', context);
   const data = [
     {
       id: 1,
@@ -42,7 +54,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   return {
     props: {
       data: data.filter(
-        (elem: serviceData) => elem.id === Number(context.query.id),
+        (elem: serviceData) => elem.id === Number(context?.params?.id),
       ),
     },
   };
