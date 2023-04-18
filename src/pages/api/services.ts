@@ -6,7 +6,7 @@ type servicesData = {
   price?: string;
 };
 
-type Data = {
+export type serviceData = {
   id: number;
   services: servicesData[];
   status: string;
@@ -16,7 +16,7 @@ type Data = {
 
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data[]>,
+  res: NextApiResponse<serviceData[]>,
 ) {
   const servicesMock = [
     {
