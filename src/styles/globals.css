@@ -12,7 +12,7 @@ body {
   @apply text-slate-900;
 }
 
-.qrcode-screen-full {
+.screen-full {
   position: fixed;
   top: 0;
   left: 0;
@@ -25,7 +25,7 @@ body {
   z-index: 5;
 }
 
-.qrcode-screen {
+.qrcode-screen, .search-screen {
   position: fixed;
   left: 50%;
   top: 20%;
@@ -33,7 +33,7 @@ body {
   z-index: 10;
 }
 
-.button-close-qrcode-screen {
+.button-close-qrcode-screen, .button-close-search-screen {
   position: absolute;
   top: -35px;
   right: -35px;
@@ -47,7 +47,7 @@ body {
   text-align: center;
 }
 
-.hide-qrcode-screen {
+.hide-qrcode-screen, .hide-search-screen {
   display: none;
 }
 

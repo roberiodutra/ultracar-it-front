@@ -11,7 +11,7 @@ export default function handler(
   res: NextApiResponse<Data>,
 ) {
   const customerMock = {
-    id: '123.456.789.00',
+    id: '123',
     name: 'Joana',
     carId: [1, 2],
   };
