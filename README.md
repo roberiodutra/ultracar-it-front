@@ -10,9 +10,9 @@
 
 <br>
 
-<p align="center">
-  <img src="https://img.shields.io/conda/l/conda-forge/setuptools?color=036b52&logo=ghost&logoColor=036b52">
-</p>
+<div align="center">
+<a href="">[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</a>
+</div>
 
 <br>
 
